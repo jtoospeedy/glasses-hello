@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mrbd-web-app-capable" content="yes">
+  <meta name="application-name" content="Hello Glasses">
+  <meta name="description" content="A starter web app for Meta Ray-Ban Display glasses.">
+  <title>Hello Glasses</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p id="time">--:--</p>
+      <p id="battery" hidden></p>
+    </header>
+    <h1>Hello from Claude</h1>
+    <p class="hint">Swipe to move. Pinch to select.</p>
+    <div class="actions">
+      <button id="count" autofocus>Count: 0</button>
+      <button id="speak">Say hello</button>
+    </div>
+    <p class="status" id="status" aria-live="polite">Waiting for input</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
